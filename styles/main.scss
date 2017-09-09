@@ -99,29 +99,6 @@ body {
 	border-radius: 1em;
 	height: 10em;
 }
-.prism {
-	display: inline-block;
-    font-weight: 300;
-    font-size: 10em;
-    @include mobile {
-    	font-weight: 400;
-    }
-    .P {
-        color: #FF6978;
-    }
-    .R {
-        color: #4CEDDE;
-    }
-    .I {
-        color: #94EA54;
-    }
-    .S {
-        color: #C85ED8;
-    }
-    .M {
-        color: #3885F9;
-    }
-}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -144,6 +121,29 @@ body {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+.prism {
+	display: inline-block;
+    font-weight: 300;
+    font-size: 10em;
+    @include mobile {
+    	font-weight: 400;
+    }
+    .P {
+        color: #FF6978;
+    }
+    .R {
+        color: #4CEDDE;
+    }
+    .I {
+        color: #94EA54;
+    }
+    .S {
+        color: #C85ED8;
+    }
+    .M {
+        color: #3885F9;
+    }
 }
 .prism:hover {
 	cursor: default;
