@@ -58,14 +58,17 @@ body {
 }
 .game-description {
 	flex: 3;
-	height: 30em;
+	height: 15em;
+	font-size: 2em;
+	text-align: center;
+	font-weight: 700;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	@include mobile {
 		padding-left: 2em;
-	    height: 25em;
-	    font-size: 2em;
+	    height: 15em;
+	    font-size: 3em;
 	}
 	a, p {
 		margin: 0;
