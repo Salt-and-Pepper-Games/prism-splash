@@ -65,7 +65,8 @@ body {
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  transition: all .25s; }
   @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
     .game-description {
       padding-left: 1em;
@@ -73,6 +74,20 @@ body {
       font-size: 4em; } }
   .game-description a, .game-description p {
     margin: 0; }
+  .game-description .sub-description {
+    visibilty: hidden;
+    opacity: 0;
+    font-size: 0;
+    transition: visibility 0s, opacity 0.125s linear; }
+  .game-description .main-description:hover {
+    cursor: pointer; }
+  .game-description .main-description:hover > .sub-description {
+    visibility: visible;
+    opacity: 1;
+    font-size: .25em; }
+    @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
+      .game-description .main-description:hover > .sub-description {
+        font-size: .5em; } }
 
 .prism-gif {
   flex: 1;

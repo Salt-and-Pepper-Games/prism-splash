@@ -73,6 +73,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	transition: all .25s;
 	@include mobile {
 		padding-left: 1em;
 	    height: 12em;
@@ -80,6 +81,23 @@ body {
 	}
 	a, p {
 		margin: 0;
+	}
+	.sub-description {
+		visibilty: hidden;
+		opacity: 0;
+		font-size: 0;
+		transition: visibility 0s, opacity 0.125s linear;
+	}
+	.main-description:hover {
+		cursor: pointer;
+	}
+	.main-description:hover > .sub-description {
+		visibility: visible;
+		opacity: 1;
+		font-size: .25em;
+		@include mobile {
+			font-size: .5em;
+		}
 	}
 }
 .prism-gif {
