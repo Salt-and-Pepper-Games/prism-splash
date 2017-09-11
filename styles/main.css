@@ -31,6 +31,9 @@ body {
 .blog-link-container {
   text-align: center;
   padding: 2em; }
+  @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
+    .blog-link-container {
+      padding: 3em; } }
 
 .blog-link {
   font-size: 2em;
@@ -39,7 +42,7 @@ body {
   transition: opacity .125s; }
   @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
     .blog-link {
-      font-size: 2em; } }
+      font-size: 3em; } }
 
 .blog-link:hover {
   opacity: .75; }
@@ -89,7 +92,7 @@ body {
   @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
     .above-screenshots {
       padding: 1em 2em;
-      font-size: 2.5em; } }
+      font-size: 3em; } }
 
 .screenshots {
   display: flex;
