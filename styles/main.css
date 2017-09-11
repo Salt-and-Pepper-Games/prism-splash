@@ -9,7 +9,7 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   -webkit-animation: fadein 2s;
   -moz-animation: fadein 2s;
   -ms-animation: fadein 2s;
@@ -33,6 +33,7 @@ body {
   padding: 2em; }
 
 .blog-link {
+  font-size: 2em;
   text-decoration: none;
   color: #3885F9;
   transition: opacity .125s; }
@@ -45,7 +46,7 @@ body {
 
 .game-info {
   display: flex;
-  padding: 2em 15em 0 15em; }
+  padding: 2em 5em 0 5em; }
   .game-info p {
     line-height: 1.5em; }
   @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
@@ -53,25 +54,25 @@ body {
       padding: 2em 5em 0 5em; } }
 
 .game-description {
+  color: #464B63;
   flex: 3;
-  height: 15em;
-  font-size: 2em;
-  text-align: center;
-  font-weight: 700;
+  height: 7.5em;
+  font-size: 4em;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
   @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
     .game-description {
-      padding-left: 2em;
-      height: 15em;
-      font-size: 3em; } }
+      padding-left: 1em;
+      height: 12em;
+      font-size: 4em; } }
   .game-description a, .game-description p {
     margin: 0; }
 
 .prism-gif {
   flex: 1;
-  padding-right: 2em; }
+  padding-right: 4em; }
 
 .prism-gif-image {
   border-radius: 1em;
@@ -81,8 +82,9 @@ body {
       height: 25em; } }
 
 .above-screenshots {
-  font-size: 1.5em;
-  padding: 2em 5em;
+  color: #464B63;
+  font-size: 2.5em;
+  padding: 0 2em;
   line-height: 1.5em; }
   @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
     .above-screenshots {
@@ -160,6 +162,7 @@ body {
   transition: all .125s; }
 
 .subtitle {
+  color: #464B63;
   font-size: 1em; }
   @media only screen and (orientation: portrait), only screen and (max-width: 768px) {
     .subtitle {

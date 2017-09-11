@@ -14,8 +14,8 @@ const colors = [
 	'#3885F9', // blue
 	'#F4EE36', // yellow
 	'#C85ED8', // magenta
-	'#4CEDDE', // cyan
-	'#464B63' // black
+	'#4CEDDE' // cyan
+	//'#464B63' // black
 	//'#FFF8F4' // white
 ];
 
