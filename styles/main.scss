@@ -81,6 +81,7 @@ body {
 	}
 	a, p {
 		margin: 0;
+		display: inline-block;
 	}
 	.sub-description {
 		visibility: hidden; /* hides sub-menu */
@@ -100,13 +101,13 @@ body {
 	.main-description {
 		position: relative;
 	}
-	.main-description:hover {
+	.main-description>p:hover {
 		cursor: pointer;
 	}
 	.main-description:focus {
 		outline: none;
 	}
-	.main-description:hover > .sub-description {
+	.main-description>p:hover ~ .sub-description {
 		visibility: visible; /* shows sub-menu */
 		opacity: 1;
 		z-index: 1;

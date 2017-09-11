@@ -73,7 +73,8 @@ body {
       height: 17em;
       font-size: 3em; } }
   .game-description a, .game-description p {
-    margin: 0; }
+    margin: 0;
+    display: inline-block; }
   .game-description .sub-description {
     visibility: hidden;
     /* hides sub-menu */
@@ -91,11 +92,11 @@ body {
         font-size: .7em; } }
   .game-description .main-description {
     position: relative; }
-  .game-description .main-description:hover {
+  .game-description .main-description > p:hover {
     cursor: pointer; }
   .game-description .main-description:focus {
     outline: none; }
-  .game-description .main-description:hover > .sub-description {
+  .game-description .main-description > p:hover ~ .sub-description {
     visibility: visible;
     /* shows sub-menu */
     opacity: 1;
