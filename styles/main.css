@@ -81,6 +81,8 @@ body {
     transition: visibility 0s, opacity 0.125s linear; }
   .game-description .main-description:hover {
     cursor: pointer; }
+  .game-description .main-description:focus {
+    outline: none; }
   .game-description .main-description:hover > .sub-description {
     visibility: visible;
     opacity: 1;

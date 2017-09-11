@@ -91,6 +91,9 @@ body {
 	.main-description:hover {
 		cursor: pointer;
 	}
+	.main-description:focus {
+		outline: none;
+	}
 	.main-description:hover > .sub-description {
 		visibility: visible;
 		opacity: 1;
